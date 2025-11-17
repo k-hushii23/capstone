@@ -1,0 +1,75 @@
+/* Page-specific styles for the Cart Review page */
+
+.cart-items {
+    margin-bottom: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.cart-item h3 {
+    color: var(--deep-midnight);
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.cart-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.cart-summary.card {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: right;
+    background-color: var(--soft-pink);
+    box-shadow: var(--shadow-md);
+}
+
+.cart-summary h2 {
+    color: var(--deep-midnight);
+    margin-bottom: 1rem;
+}
+
+.cart-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--deep-midnight);
+}
+
+.cart-summary h3 {
+    font-size: 1.8rem;
+    color: var(--panda-pink);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cart-summary .btn {
+    width: 100%;
+    background-color: var(--panda-pink);
+    color: var(--light-cream);
+}
+
+.cart-summary .btn:hover {
+    background-color: #e02a58; /* Darker shade of panda pink */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-item h3, .cart-item p {
+        margin-bottom: 0.5rem;
+    }
+}

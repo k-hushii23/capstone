@@ -1,0 +1,191 @@
+/* Styles for common components: buttons, cards, navbars */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 24px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none; /* Ensure buttons don't have underline if used as links */
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--panda-pink);
+    color: var(--light-cream);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    background-color: #e02a58; /* Darker shade of panda pink */
+    transform: scale(1.02) translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: var(--shadow-sm);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Navigation Bar (basic structure) */
+.navbar {
+    background-color: var(--deep-midnight);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: var(--light-cream);
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item a {
+    color: var(--light-cream);
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--mint-accent);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-item a:hover {
+    color: var(--mint-accent);
+    transform: translateY(-2px);
+}
+
+/* Mobile Menu Toggle (CSS-only) */
+.menu-toggle-label {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-toggle-icon {
+    width: 30px;
+    height: 3px;
+    background-color: var(--light-cream);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle-icon::before,
+.menu-toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--light-cream);
+    transition: all 0.3s ease;
+}
+
+.menu-toggle-icon::before {
+    top: -10px;
+}
+
+.menu-toggle-icon::after {
+    top: 10px;
+}
+
+#menu-toggle-checkbox:checked + .menu-toggle-label .menu-toggle-icon {
+    background-color: transparent;
+}
+
+#menu-toggle-checkbox:checked + .menu-toggle-label .menu-toggle-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#menu-toggle-checkbox:checked + .menu-toggle-label .menu-toggle-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none; /* Hide desktop nav on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--deep-midnight);
+        padding-top: 5rem;
+        box-shadow: var(--shadow-lg);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #menu-toggle-checkbox:checked ~ .navbar-nav {
+        transform: translateX(0);
+    }
+
+    .menu-toggle-label {
+        display: flex; /* Show toggle button on mobile */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item a {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        position: relative;
+        z-index: 1001;
+    }
+}

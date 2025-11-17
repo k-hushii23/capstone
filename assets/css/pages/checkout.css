@@ -1,0 +1,104 @@
+/* Page-specific styles for the Checkout / Address page */
+
+.checkout-content.grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: flex-start;
+}
+
+.shipping-address.card,
+.order-summary.card {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-md);
+}
+
+.shipping-address h2,
+.order-summary h2 {
+    color: var(--deep-midnight);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.shipping-address form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--deep-midnight);
+}
+
+.shipping-address form input[type="text"],
+.shipping-address form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--soft-pink);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+}
+
+.shipping-address form button {
+    width: 100%;
+    background-color: var(--mint-accent);
+    color: var(--deep-midnight);
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.shipping-address form button:hover {
+    background-color: #70ccb5; /* Darker mint */
+    transform: scale(1.02);
+}
+
+.order-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--deep-midnight);
+}
+
+.order-summary h3 {
+    font-size: 1.8rem;
+    color: var(--panda-pink);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: right;
+}
+
+.delivery-time-badges {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.delivery-time-badges .badge {
+    background-color: var(--soft-pink);
+    color: var(--deep-midnight);
+    padding: 0.5em 0.8em;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.order-summary .btn {
+    width: 100%;
+    background-color: var(--panda-pink);
+    color: var(--light-cream);
+}
+
+.order-summary .btn:hover {
+    background-color: #e02a58; /* Darker shade of panda pink */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .checkout-content.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .delivery-time-badges {
+        justify-content: center;
+    }
+}

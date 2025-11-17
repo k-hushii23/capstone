@@ -1,0 +1,54 @@
+/* Base styles, resets, typography, and variables */
+
+:root {
+    /* Color Palette */
+    --soft-pink: #FCE4EC;
+    --panda-pink: #FF2E63;
+    --deep-midnight: #1E1E2F;
+    --light-cream: #FFF8F2;
+    --mint-accent: #89F3D0;
+
+    /* Typography */
+    --font-heading: 'Poppins', 'Montserrat', sans-serif;
+    --font-body: 'Inter', 'Open Sans', sans-serif;
+
+    /* Box Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Basic Resets */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--deep-midnight);
+    background-color: var(--light-cream);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--deep-midnight);
+    margin-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--panda-pink);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,83 @@
+/* Page-specific styles for the Explore Restaurants page */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.filters label {
+    font-weight: bold;
+    color: var(--deep-midnight);
+}
+
+.filters select {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--soft-pink);
+    border-radius: 8px;
+    background-color: var(--light-cream);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.filters select:hover,
+.filters select:focus {
+    border-color: var(--panda-pink);
+}
+
+.restaurant-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.restaurant-card {
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.restaurant-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px) scale(1.01);
+}
+
+.restaurant-card h3 {
+    color: var(--panda-pink);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.restaurant-card p {
+    color: var(--deep-midnight);
+    font-size: 0.9rem;
+}
+
+/* Placeholder for badges if needed */
+.badge {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+.badge.rating {
+    background-color: var(--mint-accent);
+    color: var(--deep-midnight);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitekart - Home</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Bitekart</a>
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle-label">
+                <span class="menu-toggle-icon"></span>
+            </label>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="explore.html"><i class="fas fa-utensils"></i> Restaurants</a></li>
+                    <li class="nav-item"><a href="offers.html"><i class="fas fa-tags"></i> Offers</a></li>
+                    <li class="nav-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                    <li class="nav-item"><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="container">
+                <h1>Delicious Food, Delivered Fast.</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for restaurants or dishes...">
+                    <a href="explore.html" class="btn btn-primary">Search</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-cuisines container section-padding">
+            <h2 class="section-heading">Popular Cuisines</h2>
+            <div class="grid grid-3-col">
+                <a href="explore.html" class="card cuisine-card">
+                    <img src="images/cuisine-italian.jpg" alt="Italian Cuisine">
+                    <h3>Italian</h3>
+                </a>
+                <a href="explore.html" class="card cuisine-card">
+                    <img src="images/cuisine-indian.jpg" alt="Indian Cuisine">
+                    <h3>Indian</h3>
+                </a>
+                <a href="explore.html" class="card cuisine-card">
+                    <img src="images/cuisine-chinese.jpg" alt="Chinese Cuisine">
+                    <h3>Chinese</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="trending-restaurants container section-padding">
+            <h2 class="section-heading">Trending Restaurants</h2>
+            <div class="fake-slider">
+                <a href="restaurant.html" class="card restaurant-card">
+                    <img src="images/restaurant-sushi.jpg" alt="Sushi Place">
+                    <h3>Sushi Place</h3>
+                    <p>Japanese, Sushi</p>
+                </a>
+                <a href="restaurant.html" class="card restaurant-card">
+                    <img src="images/restaurant-burger.jpg" alt="Burger Joint">
+                    <h3>Burger Joint</h3>
+                    <p>American, Fast Food</p>
+                </a>
+                <a href="restaurant.html" class="card restaurant-card">
+                    <img src="images/restaurant-cafe.jpg" alt="Cozy Cafe">
+                    <h3>Cozy Cafe</h3>
+                    <p>Cafe, Desserts</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="offers-preview container section-padding">
+            <h2 class="section-heading">Special Offers</h2>
+            <div class="grid grid-2-col">
+                <a href="offers.html" class="card offer-card">
+                    <h3>Offer 1</h3>
+                    <p>Get 20% off!</p>
+                </a>
+                <a href="offers.html" class="card offer-card">
+                    <h3>Offer 2</h3>
+                    <p>Free delivery!</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bitekart. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

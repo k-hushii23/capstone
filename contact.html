@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitekart - Contact Us</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Bitekart</a>
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle-label">
+                <span class="menu-toggle-icon"></span>
+            </label>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="explore.html"><i class="fas fa-utensils"></i> Restaurants</a></li>
+                    <li class="nav-item"><a href="offers.html"><i class="fas fa-tags"></i> Offers</a></li>
+                    <li class="nav-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                    <li class="nav-item"><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <h1 class="section-heading">Contact Us</h1>
+        <div class="contact-form">
+            <form>
+                <label for="name"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject"><i class="fas fa-tag"></i> Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message"><i class="fas fa-comment-dots"></i> Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </div>
+        <div class="support-info card">
+            <h2>Support Information</h2>
+            <p><i class="fas fa-at"></i> Email: support@bitekart.com</p>
+            <p><i class="fas fa-phone-alt"></i> Phone: +1 (123) 456-7890</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bitekart. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

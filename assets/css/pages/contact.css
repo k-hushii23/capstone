@@ -1,0 +1,70 @@
+/* Page-specific styles for the Contact Us page */
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--deep-midnight);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--soft-pink);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: var(--panda-pink);
+    color: var(--light-cream);
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e02a58; /* Darker shade of panda pink */
+    transform: scale(1.02);
+}
+
+.support-info.card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--mint-accent);
+    color: var(--deep-midnight);
+    box-shadow: var(--shadow-md);
+}
+
+.support-info h2 {
+    color: var(--deep-midnight);
+    margin-bottom: 1rem;
+}
+
+.support-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,91 @@
+/* Page-specific styles for the Dish Details page */
+
+.dish-details-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.dish-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.dish-details-content .description {
+    color: var(--deep-midnight);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.dish-details-content .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--deep-midnight);
+    margin-bottom: 2rem;
+}
+
+.dish-details-content h3 {
+    color: var(--deep-midnight);
+    margin-bottom: 1rem;
+}
+
+.dish-details-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
+}
+
+.dish-details-content li {
+    background-color: var(--soft-pink);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--deep-midnight);
+    font-size: 0.95rem;
+}
+
+.add-to-cart-btn {
+    background-color: var(--mint-accent);
+    color: var(--deep-midnight);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #70ccb5; /* Darker mint */
+    transform: scale(1.03);
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.96);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .dish-details-content h1 {
+        font-size: 2rem;
+    }
+
+    .dish-details-content .price {
+        font-size: 1.8rem;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        padding: 0.8rem 1.5rem;
+    }
+}

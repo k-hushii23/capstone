@@ -1,0 +1,99 @@
+/* Page-specific styles for the Restaurant Details page */
+
+.restaurant-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.restaurant-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-banner .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: var(--light-cream);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.restaurant-banner h1 {
+    color: var(--light-cream);
+    margin-bottom: 0.5rem;
+}
+
+.restaurant-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.menu-categories {
+    padding: 3rem 0;
+}
+
+.menu-categories h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--deep-midnight);
+}
+
+.menu-categories .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.menu-category-card {
+    text-align: center;
+    background-color: var(--soft-pink);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.menu-category-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.menu-category-card h3 {
+    color: var(--deep-midnight);
+    margin-bottom: 1rem;
+}
+
+.menu-category-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category-card li a {
+    color: var(--panda-pink);
+    font-weight: bold;
+    padding: 0.5rem 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu-category-card li a:hover {
+    color: var(--deep-midnight);
+}
+
+/* Badges for ratings and delivery */
+.badge {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+.badge.fast-delivery {
+    background-color: var(--mint-accent);
+    color: var(--deep-midnight);
+}
