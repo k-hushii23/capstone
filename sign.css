@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://png.pngtree.com/png-clipart/20231026/original/pngtree-coca-cola-drink-on-white-background-in-photo-png-image_13429930.png");
+    /* background-image: url("https://i.pinimg.com/736x/93/d9/b0/93d9b05fc64925ecda9abf057c7cf705.jpg"); */
+    /* background-image: url('https://i.pinimg.com/736x/9e/ea/b0/9eeab0fb045184bde87504e12a564b50.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* A light, clean background */
+    color: #333;
+    line-height: 1.6;
+    /* Center the container vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.signin-container {
+    width: 100%;
+    max-width: 400px; /* Max width for a clean, centered form */
+    padding: 20px;
+}
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #c80404; /* App Brand Color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/* .logo a:hover {
+    color: #c80404;
+} */
+ .logo a:hover {
+    color: #e64a19;
+ }
+.form-card {
+
+    background-color: rgb(242, 233, 233);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.form-card:hover {
+    border: 1px solid #c80404 ;
+
+}
+.form-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+.form-group input:focus {
+    border-color: #c80404; /* Highlight input on focus */
+    outline: none;
+}
+.signin-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c80404;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.signin-button:hover {
+    box-shadow: 0px 8px 25px #333;
+}
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+.forgot-password a {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+    color: #c80404;
+}
+.signup-link {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+
+}
+.signup-link a {
+    color:#c80404;
+    text-decoration: none;
+    font-weight: 700;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}

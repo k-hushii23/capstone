@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8; 
+    color: #c80404;
+    line-height: 1.6;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    color: #c80404;
+    font-size: 36px;
+    font-weight: 900;
+    text-decoration: none;
+}
+.logo:hover{
+    color: #f32b2b;
+}
+
+.selection-hero {
+    text-align: center;
+    padding: 40px 0 60px;
+}
+
+.selection-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #c80404;
+}
+
+.selection-hero p {
+    font-size: 20px;
+    color: #c80404;;
+}
+
+
+.options-grid {
+    display: grid;
+    
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+
+
+
+.option-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-decoration: none; 
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 250px;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.option-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ff5722;
+}
+
+.option-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+
+.action-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    border: 2px solid;
+    transition: all 0.3s;
+}
+
+
+.partner-card .action-btn {
+    border-color: #00bcd4; 
+    color: #00bcd4;
+}
+
+.partner-card:hover .action-btn {
+    background-color: #00bcd4;
+    color: white;
+}
+
+
+.customer-card .action-btn,
+.business-card .action-btn {
+    border-color: #ff5722; 
+    color: #ff5722;
+}
+
+.customer-card:hover .action-btn,
+.business-card:hover .action-btn {
+    background-color: #ff5722;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-size: 14px;
+}

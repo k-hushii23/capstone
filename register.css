@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://png.pngtree.com/png-clipart/20231026/original/pngtree-coca-cola-drink-on-white-background-in-photo-png-image_13429930.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Light background */
+    color: #333;
+    line-height: 1.6;
+    /* Center the container vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Form Container Styling (for mobile and desktop responsiveness) --- */
+.signin-container {
+    width: 100%;
+    max-width: 400px; /* Optimal width for a form */
+    padding: 20px;
+}
+.signin-button:hover {
+    box-shadow: 0px 8px 25px #333;
+}
+
+/* --- Logo/Header Styling --- */
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    font-size: 32px;
+    font-weight: 700;
+    color: #c80404; /* App Brand Color (Orange/Red) */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: #e64a19;
+}
+
+/* --- Form Card Styling --- */
+.form-card {
+    background-color: rgb(242, 233, 233);
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+.form-card:hover {
+    border: 1px solid #c80404 ;
+
+}
+
+.form-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* --- Form Group Styling (Label and Input container) --- */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #c80404; 
+    outline: none;
+}
+
+/* --- Sign Up Button Styling --- */
+.signin-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c80404;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.signin-button:hover {
+    background-color: #c80404;
+}
+
+/* --- Existing Account Link at the bottom --- */
+.signup-link {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-link a {
+    color: #c80404;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
